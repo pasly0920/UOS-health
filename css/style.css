@@ -10,6 +10,7 @@
     width: 100vw;
     height: 0.3vh;
     position: fixed;
+    z-index: 3;
 }
 .header{
     display: flex;
@@ -17,20 +18,18 @@
     flex-direction: row;
     width: 100vw;
     height: 15vh;
-    border-bottom: 0.2vh solid rgb(160, 19, 142);
     align-items: center;
     background-color: white;
     z-index: 2;
 }
 .brandLogo{
-    padding-top: 2vh;
-    padding-left: 13vw;
+    padding-left: 12vw;
+    text-decoration: none;
+    color: rgb(16, 27, 43);
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
 }
-.brandLogo img{
-    max-height: 12vh;
-    width: 12vw;
-}
-
 .greeting{
     padding-top: 15vh;
     display: flex;
