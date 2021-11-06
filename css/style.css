@@ -1,12 +1,115 @@
-body{
+.layout-default{
     font-family: 'Gowun Dodum', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 .topLine{
     background-color: rgb(160, 19, 142);
-    width: 100%;
-    height: 3px;
+    width: 100vw;
+    height: 0.3vh;
+    position: fixed;
+}
+.header{
     display: flex;
     position: fixed;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    border-bottom: 0.2vh solid rgb(160, 19, 142);
+    align-items: center;
+    background-color: white;
+    z-index: 2;
+}
+.brandLogo{
+    padding-top: 2vh;
+    padding-left: 13vw;
+}
+.brandLogo img{
+    max-height: 12vh;
+    width: 12vw;
+}
+
+.greeting{
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(100deg, rgb(16, 27, 43) 50%, rgb(242, 242, 242) 50%);
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-family: 'Libre Baskerville', serif;
+}
+.black{
+    width: 50vw;
+    height: 85vh;
+    /* background-color: rgb(16, 27, 43); */
+    color: white;
+}
+.black p{
+    padding-left: 20vw;
+    padding-top: 5vh;
+    transform: translateX(-10%);
+    font-weight: 550;
+    font-size: 10vh;
+}
+.white{
+    /* background-color: rgb(242, 242, 242); */
+    width: 50vw;
+    height: 85vh;
+}
+.green{
+    color: rgba(153, 205, 50, 0.6);
+    font-size: 23vh;
+    padding-top: 15vh;
+    padding-left: 3vw;
+    margin-bottom: -10vh;
+}
+.quote, .writer{
+    padding-left: 6vw;
+    padding-right: 15vw;
+}
+
+.fade-in-box{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
