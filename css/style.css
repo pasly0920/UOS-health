@@ -12,6 +12,9 @@
     position: fixed;
     z-index: 3;
 }
+
+
+
 .header{
     display: flex;
     position: fixed;
@@ -30,6 +33,25 @@
     font-size: 25px;
     text-align: center;
 }
+.header .medium{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30vw;
+    
+}
+.header .medium a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    transition: ease-in .3s;
+}
+.header .medium a:hover{
+    color: rgb(109, 214, 179);
+}
+
+
+
 .greeting{
     padding-top: 15vh;
     display: flex;
@@ -166,6 +188,8 @@
         transform: translateX(-10%);
     }
 }
+
+
 
 .fas{
     color: rgba(164, 166, 167, 0.6);
