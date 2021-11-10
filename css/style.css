@@ -58,7 +58,7 @@
     flex-direction: row;
     background: linear-gradient(100deg, rgb(16, 27, 43) 50%, rgb(242, 242, 242) 50%);
     -ms-user-select: none; 
-    -moz-user-select: -moz-none;
+    -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -259,4 +259,58 @@
         opacity: 0;
         transform: translate3d(0, -5%, 0);
     }
+}
+.intro{
+    padding-top: 10vh;
+    width: 100vw;
+    height: 200vh;
+    flex-wrap: wrap;
+}
+.intro .topIntro{
+    padding-left: 10vw;
+}
+.intro .topIntro .main{
+    font-size: 50px;
+    font-weight: 1000;
+}
+.intro .topIntro .sub{
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    padding-bottom: 5vh;
+}
+
+.introContent{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    user-select: none;
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.intro1, .intro2, .intro3, .intro4{
+    width: 38vw;
+    height: 60vh;
+    background-size: cover;
+    border-radius: 10px;
+}
+.intro1{
+    background-image: url('../img/Diet.png');
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+}
+.intro2{
+    background-image: url('../img/Exercise.jpg');
+}
+.intro3{
+    background-image: url('../img/Sleep.png');
+    margin-right: 3vw;
+}
+.intro4{
+    background-image: url('../img/Better_day.jpg');
 }
