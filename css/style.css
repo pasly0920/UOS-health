@@ -4,6 +4,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .topLine{
     background-color: rgb(160, 19, 142);
@@ -23,7 +24,7 @@
     height: 15vh;
     align-items: center;
     background-color: white;
-    z-index: 2;
+    z-index: 1;
 }
 .brandLogo{
     padding-left: 12vw;
@@ -196,7 +197,7 @@
     font-size: 40px;
     position: fixed;
     padding-top: 93vh;
-    padding-left: 48.5vw;
+    padding-left: 48.2vw;
     animation: fadeInDown 3s;
     -moz-animation: fadeInDown 3s; /* Firefox */
     -webkit-animation: fadeInDown 3s; /* Safari and Chrome */
@@ -263,7 +264,7 @@
 .intro{
     padding-top: 10vh;
     width: 100vw;
-    height: 200vh;
+    height: 190vh;
     flex-wrap: wrap;
 }
 .intro .topIntro{
@@ -292,7 +293,22 @@
     -khtml-user-select: none;
     -webkit-user-select: none;
 }
-
+.introContent .introMain{
+    color: whitesmoke;
+    padding-left: 2vw;
+    font-size: 30px;
+    font-weight: 800;
+}
+.introContent .introSub{
+    color: rgb(179, 177, 177);
+    padding-left: 2vw;
+    font-size: 20px;
+    font-weight: 700;
+}
+.introContent .fas{
+    color: aquamarine;
+    font-size: 50px;
+}
 .intro1, .intro2, .intro3, .intro4{
     width: 38vw;
     height: 60vh;
@@ -303,14 +319,86 @@
     background-image: url('../img/Diet.png');
     margin-right: 3vw;
     margin-bottom: 5vh;
+    position: relative;
+}
+.intro1::before{
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    border-radius: 10px;
+}
+.intro1 .introMain{
+    position: relative;
+}
+.intro1 .introSub{
+    position: relative;
 }
 .intro2{
     background-image: url('../img/Exercise.jpg');
+    position: relative;
+}
+.intro2::before{
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    border-radius: 10px;
+}
+.intro2 .introMain{
+    position: relative;
+}
+.intro2 .introSub{
+    position: relative;
 }
 .intro3{
     background-image: url('../img/Sleep.png');
     margin-right: 3vw;
+    position: relative;
+}
+.intro3::before{
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    border-radius: 10px;
+}
+.intro3 .introMain{
+    position: relative;
+}
+.intro3 .introSub{
+    position: relative;
 }
 .intro4{
     background-image: url('../img/Better_day.jpg');
+    position: relative;
+}
+.intro4::before{
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    border-radius: 10px;
+}
+.intro4 .introMain{
+    position: relative;
+}
+.intro4 .introSub{
+    position: relative;
 }
