@@ -1,0 +1,53 @@
+.layout-default{
+    /* font-family: 'Gowun Dodum', sans-serif; */
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.topLine{
+    background-color: rgb(160, 19, 142);
+    width: 100vw;
+    height: 0.3vh;
+    position: fixed;
+    z-index: 3;
+}
+
+
+
+.header{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+.brandLogo{
+    padding-left: 12vw;
+    text-decoration: none;
+    color: rgb(16, 27, 43);
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}
+.header .medium{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30vw;
+    
+}
+.header .medium a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    transition: ease-in .3s;
+}
+.header .medium a:hover{
+    color: rgb(109, 214, 179);
+}
