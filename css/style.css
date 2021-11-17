@@ -11,26 +11,31 @@
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 .topLine{
     background-color: rgb(160, 19, 142);
     width: 100vw;
     height: 0.3vh;
     position: fixed;
-    z-index: 3;
+    z-index: 8;
 }
-
+.purple{
+    color: rgb(160, 19, 142);
+}
 
 
 .header{
     display: flex;
     position: fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
     flex-direction: row;
     width: 100vw;
     height: 15vh;
     align-items: center;
     background-color: white;
-    z-index: 1;
+    z-index: 7;
 }
 .brandLogo{
     padding-left: 12vw;
@@ -48,13 +53,13 @@
 }
 .header .medium a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     transition: ease-in .3s;
 }
 .header .medium a:hover{
-    color: rgb(109, 214, 179);
+    color: rgb(160, 19, 142);
 }
 
 
@@ -299,7 +304,7 @@
     font-weight: 800;
 }
 .introContent .introSub{
-    color: rgb(179, 177, 177);
+    color: white;
     padding-left: 2vw;
     font-size: 20px;
     font-weight: 500;
@@ -313,12 +318,14 @@
     height: 60vh;
     background-size: cover;
     border-radius: 10px;
+    overflow: hidden;
 }
 .intro1{
     background-image: url('../img/Diet.png');
     margin-right: 3vw;
     margin-bottom: 5vh;
     position: relative;
+    z-index: 5;
 }
 .intro1::before{
     content: "";
@@ -330,12 +337,18 @@
     bottom: 0;
     background-color: #000;
     border-radius: 10px;
+    z-index: 0;
 }
 .intro1 .introMain{
     position: relative;
 }
 .intro1 .introSub{
     position: relative;
+    bottom: -70%;
+    transition: all .7s;
+}
+.intro1:hover .introSub{
+    transform: translateY(-200%);
 }
 .intro2{
     background-image: url('../img/Exercise.jpg');
@@ -351,17 +364,24 @@
     bottom: 0;
     background-color: #000;
     border-radius: 10px;
+    z-index: 0;
 }
 .intro2 .introMain{
     position: relative;
 }
 .intro2 .introSub{
     position: relative;
+    bottom: -80%;
+    transition: all .7s;
+}
+.intro2:hover .introSub{
+    transform: translateY(-200%);
 }
 .intro3{
     background-image: url('../img/Sleep.png');
     margin-right: 3vw;
     position: relative;
+    z-index: 5;
 }
 .intro3::before{
     content: "";
@@ -373,12 +393,19 @@
     bottom: 0;
     background-color: #000;
     border-radius: 10px;
+    z-index: 0;
 }
 .intro3 .introMain{
     position: relative;
 }
 .intro3 .introSub{
     position: relative;
+    bottom: -80%;
+    transition: all .7s;
+}
+.intro3:hover .introSub{
+    z-index: 3;
+    transform: translateY(-200%);
 }
 .intro4{
     background-image: url('../img/Better_day.jpg');
@@ -394,12 +421,18 @@
     bottom: 0;
     background-color: #000;
     border-radius: 10px;
+    z-index: 0;
 }
 .intro4 .introMain{
     position: relative;
 }
 .intro4 .introSub{
     position: relative;
+    bottom: -80%;
+    transition: all .7s;
+}
+.intro4:hover .introSub{
+    transform: translateY(-200%);
 }
 
 
@@ -427,13 +460,13 @@
     font-weight: 600;
 }
 .diet, .exercise, .sleep{
-    padding-right: 9vw;
+    padding-right: 13vw;
 }
 
 
 .start{
-    background: white;
-    z-index: 3;
+    background-color: white;
+    z-index: 6;
 }
 .start .startMain{
     text-align: center;
