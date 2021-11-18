@@ -12,13 +12,6 @@
     -webkit-user-select: none;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
-.topLine{
-    background-color: rgb(160, 19, 142);
-    width: 100vw;
-    height: 0.3vh;
-    position: fixed;
-    z-index: 8;
-}
 .purple{
     color: rgb(160, 19, 142);
 }
@@ -35,6 +28,7 @@
     align-items: center;
     background-color: white;
     z-index: 7;
+    border-bottom: 2px solid rgb(160, 19, 142);
 }
 .brandLogo{
     padding-left: 12vw;
