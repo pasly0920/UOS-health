@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting | UOS Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/setting.css">
+    <script src="./js/setting.js"></script>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png"> 
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png"> 
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png"> 
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png"> 
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png"> 
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png"> 
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png"> 
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.ico/android-icon-192x192.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png"> 
+    <link rel="manifest" href="favicon.ico/manifest.json"> 
+    <meta name="msapplication-TileColor" content="#ffffff"> 
+    <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png"> 
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="layout-default">
+    <nav class="header">
+        <a href="index.html" class="brandLogo"><p>UOS Healthcare</p></a>
+        <div class="medium">
+            <ul><a href="./diet.html">Diet</a></ul>
+            <ul><a href="./exercise.html">Exercise</a></ul>
+            <ul><a href="./sleep.html">Sleep</a></ul>
+            <ul><a href="./rec.html">Rec.</a></ul>
+            <ul><a href="./setting.html">Setting</a></ul>
+        </div>
+    </nav>
+    <div class="userInfo">
+        <p class="top">Enter Information</p>
+        <p class="mid">기본 정보 입력</p>
+        <div class="inputBox">
+            <div class="left">
+                <label for="height">키&nbsp;(cm)</label>
+                <input type="text" id="height" required minlength="4" maxlength="8" max = "200" min ="130" size="25" type = "number">
+                <label for="weight">무게&nbsp;(kg)</label>
+                <input type="text" id="weight" required minlength="2" maxlength="6" max = "200" min = "40" size="25" type = "number">
+                <label for="age">나이&nbsp;</label>
+                <input type="text" id="age" required minlength="1" maxlength="4" max = "100" min = "5" size="25" type = "number">
+            </div>
+            <div class="right">
+                <label for="sex" class="mid">성별</label><br>
+                <label for="gender"><input type="radio" id = "gender" name="sex" value="male">남성</label><br>
+                <label for="gender1"><input type="radio" id ="gender1" name= "sex" value="female">여성</label><br>
+                <label for="activeTime" class="mid">일일 활동 시간</label><br>
+                <label for="lowActive"><input type="radio" name="activity" id ="lowActive" value="lowActive">일상활동 + 하루 30분 미만 </label><br>
+                <label for="midActive"><input type="radio" name="activity" id = "midActive" value="midActive">일상활동 + 하루 30분~60분 </label><br>
+                <label for="highActive"><input type="radio" name="activity" id = "highActive" value="highActive">일상활동 + 하루 60분 이상 꾸준한 운동</label><br>
+                <label for="Active"><input type="radio" name="activity" id = "Active" value="Active">일상활동 + 60분 무난한 운동 + 60분 격렬한 운동</label><br>
+            </div>
+            <div class="side">
+                <p class="mid">목표 입력</p>
+                <label for="dietGoal">목표 체중</label><br>
+                <input type="text" id="goalWei" required minlength="2" maxlength="6" max = "200" min = "40" size="25" type = "number">
+            </div>
+        </div>
+    </div>
+    <input type="button" value="저장 & 식단 이동" class="start" onclick="location.href='./diet.html'">
+</body> 
+</html>
