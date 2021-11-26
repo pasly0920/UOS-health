@@ -26,6 +26,7 @@
     align-items: center;
     background-color: white;
     z-index: 1;
+    border-bottom: 2px solid rgb(160, 19, 142);
 }
 .brandLogo{
     padding-left: 12vw;
@@ -49,5 +50,5 @@
     transition: ease-in .3s;
 }
 .header .medium a:hover{
-    color: rgb(109, 214, 179);
+    color: rgb(160, 19, 142);
 }
