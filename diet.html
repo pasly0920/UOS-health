@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/diet.css">
     <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
     <script src="./js/dietDB.js"></script>
+    <script src="./js/dietChart.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png"> 
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png"> 
@@ -46,16 +47,16 @@
         </div>
     </nav>
     <div class="totalTop">
-        <progress value="20" max="100" class="carbo"></progress>
-        <progress value="20" max="100" class="pro"></progress>
-        <progress value="20" max="100" class="fat"></progress>
+        <div class="chart pro"><span class="center">80%</span></div>
+        <div class="chart carbo"><span class="center">50%</span></div>
+        <div class="chart fat"><span class="center">50%</span></div>
     </div>
     <div class="totalMid">
-        <progress value="20" max="100" class="sweet"></progress>
-        <progress value="20" max="100" class="natrium"></progress>
+        <div class="chart sweet"><span class="center">80%</span></div>
+        <div class="chart natrium"><span class="center">80%</span></div>
     </div>
     <div class="totalBot">
-        <progress value="20" max="100" class="calrorie"></progress>
+        <div class="chart calrorie"><span class="center">80%</span></div>
     </div>
     <div class="dietInput">
         <p class="mid">오늘의 식단</p>
