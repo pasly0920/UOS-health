@@ -23,7 +23,7 @@
     height: 15vh;
     align-items: center;
     background-color: white;
-    z-index: 2;
+    z-index: 3;
     border-bottom: 2px solid rgb(160, 19, 142);
 }
 .brandLogo{
@@ -64,12 +64,13 @@
 }
 .totalTop{
     padding-top: 20vh;
+    z-index: 2;
 }
 .totalMid{
-    margin-top: -10vh;
+    margin-top: 3vh;
 }
-.totalBot{
-    margin-top: -5vh;
+ .carbo, .fat, .natrium, .calrorie{
+    margin-left: 10vw;
 }
 
 .chart{
@@ -85,10 +86,10 @@ span.center{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    line-height: 80px;
+    line-height: 140px;
     font-size: 20px;
     transform: translate(-50%, -50%);
 }
