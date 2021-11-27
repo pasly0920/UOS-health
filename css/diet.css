@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: rgb(242, 242, 242);
 }
 .topLine{
     background-color: rgb(160, 19, 142);
@@ -48,4 +49,45 @@
 }
 .header .medium a:hover{
     color: rgb(160, 19, 142);
+}
+
+.totalTop, .totalMid, .totalBot{
+    text-align: center;
+    flex-direction: row;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.totalTop{
+    padding-top: 20vh;
+    
+}
+
+.totalMid{
+    padding-top: 3vh;
+    
+}
+
+.totalBot{
+    padding-top: 5vh;
+    
+}
+
+.dietInput{
+    text-align: center;
+}
+.dietInput .mid{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+.fas{
+    margin-top: -13vh;
+    font-size: 40px;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+.fas:hover{
+    color: rgb(49, 49, 49);
 }
