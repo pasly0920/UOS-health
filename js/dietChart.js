@@ -4,6 +4,8 @@ const colorFn = (i, classname, color) => {
 
 const makeChart = (percent, classname, color) => {
     let i = 1;
+    if(percent > 100)
+        color = 'red';
     let chartFn = setInterval(function(){
         if(i <= percent){
             colorFn(i, classname, color);
@@ -27,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function(){
     makeChart(50, chart3, '#ffe4af');
     makeChart(80, chart4, '#afffba');
     makeChart(80, chart5, '#fdfa87');
-    makeChart(80, chart6, 'aquamarine');
+    makeChart(120, chart6, 'aquamarine');
 })
 
