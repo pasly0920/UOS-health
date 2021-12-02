@@ -112,3 +112,27 @@ span.center{
 .fas:hover{
     color: rgb(49, 49, 49);
 }
+
+.dietInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    justify-content: center;
+}
+.search1 button, .search2 button, .search3 button{
+    visibility: hidden;
+}
+.keyword1, .keyword2, .keyword3{
+    border: 0;
+    border-bottom: black 1px solid;
+    background: transparent;
+    margin-left: 2vw;   
+}
+.keyword1:focus, .keyword2:focus, .keyword3:focus{
+    outline: none;
+}
+.morning, .lunch{
+    margin-right: 18vw;
+}

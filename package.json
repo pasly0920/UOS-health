@@ -1,0 +1,19 @@
+{
+  "name": "uos-health",
+  "version": "1.0.0",
+  "description": "comprehensive health care web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasly0920/UOS-health.git"
+  },
+  "author": "Pasly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pasly0920/UOS-health/issues"
+  },
+  "homepage": "https://github.com/pasly0920/UOS-health#readme"
+}

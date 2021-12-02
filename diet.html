@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
     <script src="./js/dietDB.js"></script>
     <script src="./js/dietChart.js"></script>
+    <script src="./js/dietSearch.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png"> 
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png"> 
@@ -61,9 +62,36 @@
         <i class="fas fa-plus-square"></i>
     </div>
     <div class="dietInfo">
-        <div class="morning"></div>
-        <div class="lunch"></div>
-        <div class="dinner"></div>
+        <div class="morning">
+            <h2>아침</h2>
+            <form class="search1">
+                <input type="text" class="keyword1" name="search" maxlength="15" autocomplete="off" placeholder="메뉴를 입력해주세요!">
+                <button title="submit" type="button" name = "submitBtn"></button>
+            </form>
+            <div class="searchRes1">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="lunch">
+            <h2>점심</h2>
+            <form class="search2">
+                <input type="text" class="keyword2" name="search" maxlength="15" autocomplete="off" placeholder="메뉴를 입력해주세요!">
+                <button title="submit" type="button" name = "submitBtn"></button>
+            </form>
+            <div class="searchRes2">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="dinner">
+            <h2>저녁</h2>
+            <form class="search3">
+                <input type="text" class="keyword3" name="search" maxlength="15" autocomplete="off" placeholder="메뉴를 입력해주세요!">
+                <button title="submit" type="button" name = "submitBtn"></button>
+            </form>
+            <div class="searchRes3">
+                <ul></ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
