@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/pasly0920/UOS-health/issues"
   },
-  "homepage": "https://github.com/pasly0920/UOS-health#readme"
+  "homepage": "https://github.com/pasly0920/UOS-health#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "request": "^2.88.2"
+  }
 }
