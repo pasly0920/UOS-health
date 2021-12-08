@@ -134,5 +134,65 @@ span.center{
     outline: none;
 }
 .morning, .lunch{
-    margin-right: 18vw;
+    margin-right: 10vw;
 }
+
+.list{
+    list-style: none;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.searchRes1, .searchRes2, .searchRes3{
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    height: 200px;
+}
+.searchRes1::-webkit-scrollbar {
+    width: 10px;
+  }
+.searchRes1::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+.searchRes1::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+.searchRes2::-webkit-scrollbar {
+    width: 10px;
+  }
+.searchRes2::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+.searchRes2::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+.searchRes3::-webkit-scrollbar {
+    width: 10px;
+  }
+.searchRes3::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+.searchRes3::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
