@@ -99,6 +99,10 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
         const target = document.querySelector('.searchRes1 ul');
         const items = target.getElementsByTagName('li');
+
+        const searchResult1 = document.querySelector('.searchRes1');
+        searchResult1.style.height = "150px";
+
         while(items.length > 0){
             items[0].remove();
         }
@@ -121,17 +125,24 @@ document.addEventListener("DOMContentLoaded", function(){
             })
             .then( t => {
                 const list = document.querySelectorAll('.searchRes1 .list li');
-                
+                const resList = document.querySelector('.morningMenu .list');
+
                 const listLength = list.length;
 
                 for(let i = 0; i < listLength; i++){
-                    list[i].addEventListener("click", function(){
+                    list[i].addEventListener("click", function(evt){
                         listSelect(list[i])
+                            .then( tr => {
+                                const resLi = document.createElement("li");
+                                resLi.innerText = evt.target.innerText;
+                                resList.appendChild(resLi);
+                             })
                             .then(
                                 t => {
                                     while(items.length > 0){
                                         items[0].remove();
                                     }
+                                    searchResult1.style.height = "0";
                                 }
                             )
                             .catch(err => console.log(err));
@@ -146,6 +157,9 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
         const target = document.querySelector('.searchRes2 ul');
         const items = target.getElementsByTagName('li');
+        const searchResult2 = document.querySelector('.searchRes2');
+        searchResult2.style.height = "150px";
+
         while(items.length > 0){
             items[0].remove();
         }
@@ -168,17 +182,24 @@ document.addEventListener("DOMContentLoaded", function(){
             })
             .then( t => {
                 const list = document.querySelectorAll('.searchRes2 .list li');
-                
+                const resList = document.querySelector('.lunchMenu .list');
+
                 const listLength = list.length;
 
                 for(let i = 0; i < listLength; i++){
-                    list[i].addEventListener("click", function(){
+                    list[i].addEventListener("click", function(evt){
                         listSelect(list[i])
+                            .then( tr => {
+                                const resLi = document.createElement("li");
+                                resLi.innerText = evt.target.innerText;
+                                resList.appendChild(resLi);
+                            })
                             .then(
                                 t => {
                                     while(items.length > 0){
                                         items[0].remove();
                                     }
+                                    searchResult2.style.height = "0";
                                 }
                             )
                             .catch(err => console.log(err));
@@ -193,6 +214,10 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
         const target = document.querySelector('.searchRes3 ul');
         const items = target.getElementsByTagName('li');
+
+        const searchResult3 = document.querySelector('.searchRes3');
+        searchResult3.style.height = "150px";
+
         while(items.length > 0){
             items[0].remove();
         }
@@ -215,17 +240,24 @@ document.addEventListener("DOMContentLoaded", function(){
             })
             .then( t => {
                 const list = document.querySelectorAll('.searchRes3 .list li');
-                
+                const resList = document.querySelector('.dinnerMenu .list');
+
                 const listLength = list.length;
 
                 for(let i = 0; i < listLength; i++){
-                    list[i].addEventListener("click", function(){
+                    list[i].addEventListener("click", function(evt){
                         listSelect(list[i])
+                            .then( tr => {
+                                const resLi = document.createElement("li");
+                                resLi.innerText = evt.target.innerText;
+                                resList.appendChild(resLi);
+                            })
                             .then(
                                 t => {
                                     while(items.length > 0){
                                         items[0].remove();
                                     }
+                                    searchResult3.style.height = "0";
                                 }
                             )
                             .catch(err => console.log(err));

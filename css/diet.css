@@ -120,6 +120,7 @@ span.center{
     margin-bottom: 10vh;
     text-align: center;
     justify-content: center;
+    /* transition: .5s; */
 }
 .search1 button, .search2 button, .search3 button{
     visibility: hidden;
@@ -152,7 +153,7 @@ span.center{
     padding-right: 0;
     overflow-y: scroll;
     scrollbar-width: thin;
-    height: 200px;
+    height: 0px;
 }
 .searchRes1::-webkit-scrollbar {
     width: 10px;
@@ -196,3 +197,14 @@ span.center{
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
   }
+
+.morningMenu, .lunchMenu, .dinnerMenu{
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.morningMenu .list, .lunchMenu .list, .dinnerMenu .list{
+    cursor: default;
+}

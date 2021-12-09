@@ -82,12 +82,9 @@ window.onload = ()=>{
         //check 변수 설정
         localStorage.setItem('check', "true"); 
     }
-    document.addEventListener("DOMContentLoaded", function(){
-        const submitBtn = document.querySelector('.dietInput fas');
-        submitBtn.addEventListener("click", function(){
+    document.querySelector('.dietInput .fas').addEventListener("click", function(){
         app.addTotal(localStorage.getItem('Kcal'), localStorage.getItem('carbo'), localStorage.getItem('pro'), localStorage.getItem('fat'), localStorage.getItem('sweet'), localStorage.getItem('sodium'));
-        //slide up??
-        })
+        console.log("db inject");
     })
     
 };

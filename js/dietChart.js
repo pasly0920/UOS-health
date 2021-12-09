@@ -24,11 +24,23 @@ document.addEventListener("DOMContentLoaded", function(){
     const chart5 = document.querySelector('.natrium');
     const chart6 = document.querySelector('.calrorie');
 
-    makeChart(80, chart1, '#ffafb0');
+    const proChart = document.querySelector('.pro span');
+    const carboChart = document.querySelector('.carbo span');
+    const fatChart = document.querySelector('.fat span');
+    const sweetChart = document.querySelector('.sweet span');
+    const sodiumChart = document.querySelector('.natrium span');
+    const kcalChart = document.querySelector('.calrorie span');
+
+    makeChart(80, chart1, '#ffafb0');   
     makeChart(50, chart2, '#b5c7ed');
     makeChart(50, chart3, '#ffe4af');
     makeChart(80, chart4, '#afffba');
     makeChart(80, chart5, '#fdfa87');
     makeChart(120, chart6, 'aquamarine');
+
+    document.querySelector('.dietInput .fas').addEventListener("click", function(){
+        
+        console.log("clicked");
+    })
 })
 
