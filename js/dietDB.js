@@ -68,19 +68,19 @@ window.onload = ()=>{
         app.addRecomend(localStorage.getItem("goalPro"), localStorage.getItem("goalCarbo"), localStorage.getItem("goalFat"), localStorage.getItem("goalSweet"), localStorage.getItem("goalSodium"), localStorage.getItem("goalKcal"));
         //chart 수정
         const proChart = document.querySelector('.pro span');
-        proChart.innerHTML = "<br><br>단백질 80%<br>2100 / "+ localStorage.getItem('goalPro') +" (g)";
+        proChart.innerHTML = "<br><br>단백질 0%<br>0 / "+ localStorage.getItem('goalPro') +" (g)";
         const carboChart = document.querySelector('.carbo span');
-        carboChart.innerHTML = "<br><br>탄수화물 50%<br>0 / "+ localStorage.getItem('goalCarbo') +" (g)";
+        carboChart.innerHTML = "<br><br>탄수화물 0%<br>0 / "+ localStorage.getItem('goalCarbo') +" (g)";
         const fatChart = document.querySelector('.fat span');
-        fatChart.innerHTML = "<br><br>지방 50%<br>0 / "+ localStorage.getItem('goalFat') +" (g)";
+        fatChart.innerHTML = "<br><br>지방 0%<br>0 / "+ localStorage.getItem('goalFat') +" (g)";
         const sweetChart = document.querySelector('.sweet span');
-        sweetChart.innerHTML = "<br><br>당류 80%<br>0 / "+ localStorage.getItem('goalSweet') +" (g)";
+        sweetChart.innerHTML = "<br><br>당류 0%<br>0 / "+ localStorage.getItem('goalSweet') +" (g)";
         const sodiumChart = document.querySelector('.natrium span');
-        sodiumChart.innerHTML = "<br><br>나트륨 80%<br>0 / "+ localStorage.getItem('goalSodium') +" (mg)";
+        sodiumChart.innerHTML = "<br><br>나트륨 0%<br>0 / "+ localStorage.getItem('goalSodium') +" (mg)";
         const kcalChart = document.querySelector('.calrorie span');
-        kcalChart.innerHTML = "<br><br>총 칼로리 120%<br>0 / "+ localStorage.getItem('goalKcal') +" (Kcal)";
+        kcalChart.innerHTML = "<br><br>총 칼로리 0%<br>0 / "+ localStorage.getItem('goalKcal') +" (Kcal)";
         //check 변수 설정
-        localStorage.setItem('check', "true"); 
+        localStorage.setItem('check', "true2"); 
     }
     document.querySelector('.dietInput .fas').addEventListener("click", function(){
         app.addTotal(localStorage.getItem('Kcal'), localStorage.getItem('carbo'), localStorage.getItem('pro'), localStorage.getItem('fat'), localStorage.getItem('sweet'), localStorage.getItem('sodium'));

@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("Kcal"));
                 rec += Number(_calrorie);
+                rec = Math.round(rec);
                 localStorage.setItem("Kcal", String(rec));
             }
         }
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("carbo"));
                 rec += Number(_carbo);
+                rec = Math.round(rec);
                 localStorage.setItem("carbo", String(rec));
             }
         }
@@ -46,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("pro"));
                 rec += Number(_pro);
+                rec = Math.round(rec);
                 localStorage.setItem("pro", String(rec));
             }
         }
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("fat"));
                 rec += Number(_fat);
+                rec = Math.round(rec);
                 localStorage.setItem("fat", String(rec));
             }
         }
@@ -72,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("sweet"));
                 rec += Number(_sweet);
+                rec = Math.round(rec);
                 localStorage.setItem("sweet", String(rec));
             }
         }
@@ -85,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 let rec = Number(localStorage.getItem("sodium"));
                 rec += Number(_sodium);
+                rec = Math.round(rec);
                 localStorage.setItem("sodium", String(rec));
             }
         }

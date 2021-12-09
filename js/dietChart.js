@@ -31,15 +31,26 @@ document.addEventListener("DOMContentLoaded", function(){
     const sodiumChart = document.querySelector('.natrium span');
     const kcalChart = document.querySelector('.calrorie span');
 
-    makeChart(80, chart1, '#ffafb0');   
-    makeChart(50, chart2, '#b5c7ed');
-    makeChart(50, chart3, '#ffe4af');
-    makeChart(80, chart4, '#afffba');
-    makeChart(80, chart5, '#fdfa87');
-    makeChart(120, chart6, 'aquamarine');
+    makeChart(0, chart1, '#ffafb0');   
+    makeChart(0, chart2, '#b5c7ed');
+    makeChart(0, chart3, '#ffe4af');
+    makeChart(0, chart4, '#afffba');
+    makeChart(0, chart5, '#fdfa87');
+    makeChart(0, chart6, 'aquamarine');
 
     document.querySelector('.dietInput .fas').addEventListener("click", function(){
-        
+        proChart.innerHTML = "<br><br>단백질 "+ Math.round(Number(localStorage.getItem("pro")) / Number(localStorage.getItem('goalPro')) * 100) +"%<br>" + localStorage.getItem("pro") + " / "+ localStorage.getItem('goalPro') +" (g)";
+        makeChart(Math.round(Number(localStorage.getItem("pro")) / Number(localStorage.getItem('goalPro')) * 100), chart1, '#ffafb0');
+        carboChart.innerHTML = "<br><br>탄수화물 "+ Math.round(Number(localStorage.getItem("carbo")) / Number(localStorage.getItem('goalCarbo')) * 100) +"%<br>" + localStorage.getItem("carbo") + " / "+ localStorage.getItem('goalCarbo') +" (g)";
+        makeChart(Math.round(Number(localStorage.getItem("carbo")) / Number(localStorage.getItem('goalCarbo')) * 100), chart2, '#b5c7ed');
+        fatChart.innerHTML = "<br><br>지방 "+ Math.round(Number(localStorage.getItem("fat")) / Number(localStorage.getItem('goalFat')) * 100) +"%<br>" + localStorage.getItem("fat") + " / "+ localStorage.getItem('goalFat') +" (g)";
+        makeChart(Math.round(Number(localStorage.getItem("fat")) / Number(localStorage.getItem('goalFat')) * 100), chart3, '#ffe4af');
+        sweetChart.innerHTML = "<br><br>당류 "+ Math.round(Number(localStorage.getItem("sweet")) / Number(localStorage.getItem('goalSweet')) * 100) +"%<br>" + localStorage.getItem("sweet") + " / "+ localStorage.getItem('goalSweet') +" (g)";
+        makeChart(Math.round(Number(localStorage.getItem("sweet")) / Number(localStorage.getItem('goalSweet')) * 100), chart4, '#afffba');
+        sodiumChart.innerHTML = "<br><br>나트륨 "+ Math.round(Number(localStorage.getItem("sodium")) / Number(localStorage.getItem('goalSodium')) * 100) +"%<br>" + localStorage.getItem("sodium") + " / "+ localStorage.getItem('goalSodium') +" (mg)";
+        makeChart(Math.round(Number(localStorage.getItem("sodium")) / Number(localStorage.getItem('goalSodium')) * 100), chart5, '#fdfa87');
+        kcalChart.innerHTML = "<br><br>총 칼로리 "+ Math.round(Number(localStorage.getItem("Kcal")) / Number(localStorage.getItem('goalKcal')) * 100) +"%<br>" + localStorage.getItem("Kcal") + " / "+ localStorage.getItem('goalKcal') +" (mg)";
+        makeChart(Math.round(Number(localStorage.getItem("Kcal")) / Number(localStorage.getItem('goalKcal')) * 100), chart6, 'aquamarine');
         console.log("clicked");
     })
 })
