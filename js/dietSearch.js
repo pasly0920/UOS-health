@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         if(_fat !== "N/A"){
             if(check == null)
-                localStorage.setItem("fat", _pro);
+                localStorage.setItem("fat", _fat);
             else{
                 let rec = Number(localStorage.getItem("fat"));
                 rec += Number(_fat);
