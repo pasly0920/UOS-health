@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: rgb(242, 242, 242);
 }
 .topLine{
     background-color: rgb(160, 19, 142);
@@ -51,4 +52,90 @@
 }
 .header .medium a:hover{
     color: rgb(160, 19, 142);
+}
+
+
+.main{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sleep{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    width: 30vw;
+}
+
+.coffee{
+    display: flex;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    flex-direction: column;
+}
+.chart{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+span.center{
+    background: #fff;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+}
+
+.sleepInput{
+    margin-left: 6vw;
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+input{
+    margin-top: 5vh;
+    width: 150px;
+    font-size: 18px;
+    background-color: rgb(247, 247, 247);
+    border: 0;
+}
+input:hover{
+    background-color: white;
+}
+
+.coffeeInput{
+    margin-top: 14vh;
+    margin-bottom: 5vh;
+}
+.cafInfo{
+    font-size: 20px;
+}
+
+.start{
+    background-color: rgb(49, 130, 246);
+    color: white;
+    margin-left: 43vw;
+    margin-right: 43vw;
+    margin-top: 7vh;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+.start:hover{
+    background-color: rgb(27, 100, 218);
 }

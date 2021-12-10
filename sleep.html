@@ -13,6 +13,9 @@
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/sleep.css">
+    <script src="./js/sleep.js"></script>
+    <script src="./js/cof.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
    
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png"> 
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png"> 
@@ -42,5 +45,25 @@
             <ul><a href="./setting.html">Setting</a></ul>
         </div>
     </nav>
+    <div class="main">
+        <div class="sleep">
+            <div class="sleepGraph">
+
+            </div>
+            <div class="sleepInput">
+                <span class="sleepInfo">수면 시간을 입력해주세요!<br></span>
+                <input type="number" min = "0" max = "24" placeholder="hour" id = "hour">
+                <input type="number" min = "0" max = "60" placeholder="minute" id = "min">
+            </div>
+        </div>
+        <div class="coffee">
+            <div class="chart caff"><span class="center"><br><br>카페인 0%<br>0 / 400 (mg)</span></div>
+            <div class="coffeeInput">
+                <span class="cafInfo">오늘 섭취한 카페인을 입력해주세요!<br></span>
+                <input type="number" min = "0" max = "1000" placeholder = "mg" id = "coffee">
+            </div>
+        </div>
+    </div>
+    <input type="button" value="저장" class="start">
 </body>
 </html>
