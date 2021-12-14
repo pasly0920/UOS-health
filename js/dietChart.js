@@ -15,7 +15,27 @@ const makeChart = (percent, classname, color) => {
         }
     }, 10);
 }
+function getToday(){
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = ("0"+(1+today.getMonth())).slice(-2);
+    const date = ("0"+today.getDate()).slice(-2);
+
+    return String(year+month+date) + "D";
+}
 document.addEventListener("DOMContentLoaded", function(){
+    const today = getToday();
+
+    if(localStorage.getItem(today) == null){
+        localStorage.setItem(getToday(), true);
+        localStorage.setItem("fat", 0);
+        localStorage.setItem("pro", 0);
+        localStorage.setItem("carbo", 0);
+        localStorage.setItem("sweet", 0);
+        localStorage.setItem("sodium", 0);
+        localStorage.setItem("Kcal", 0);
+    }
+
     const chart1 = document.querySelector('.pro');
     const chart2 = document.querySelector('.carbo');
     const chart3 = document.querySelector('.fat');
@@ -37,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(){
     makeChart(0, chart4, '#afffba');
     makeChart(0, chart5, '#fdfa87');
     makeChart(0, chart6, 'aquamarine');
-
+    
     document.querySelector('.dietInput .fas').addEventListener("click", function(){
         proChart.innerHTML = "<br><br>단백질 "+ Math.round(Number(localStorage.getItem("pro")) / Number(localStorage.getItem('goalPro')) * 100) +"%<br>" + localStorage.getItem("pro") + " / "+ localStorage.getItem('goalPro') +" (g)";
         makeChart(Math.round(Number(localStorage.getItem("pro")) / Number(localStorage.getItem('goalPro')) * 100), chart1, '#ffafb0');
@@ -52,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){
         kcalChart.innerHTML = "<br><br>총 칼로리 "+ Math.round(Number(localStorage.getItem("Kcal")) / Number(localStorage.getItem('goalKcal')) * 100) +"%<br>" + localStorage.getItem("Kcal") + " / "+ localStorage.getItem('goalKcal') +" (mg)";
         makeChart(Math.round(Number(localStorage.getItem("Kcal")) / Number(localStorage.getItem('goalKcal')) * 100), chart6, 'aquamarine');
         console.log("clicked");
+        
     })
 })
 
